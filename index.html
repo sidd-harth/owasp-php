@@ -1,0 +1,279 @@
+<?php
+$output = <<<OUTPUT
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OWASP API Threat</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/owasp.css">
+</head>
+<body>
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="tm-site-header">
+            <i class="fas fa-space-shuttle fa-3x tm-site-logo"></i>
+            <h1 class="tm-site-name">Super Heros Shop</h1>
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#product" class="tm-page-link active">
+                  <i class="fas fa-dice-d20 tm-page-link-icon"></i>
+                  <span>View Product Details - Infinity 	Gauntlet</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="product" class="tm-page-content">
+            <!-- product Menu Page -->
+            <nav class="tm-black-bg tm-products-nav">
+              <ul>
+                <li>
+                  <a href="#" class="tm-tab-link active" data-id="cold">Product Details</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="reviews" onclick="reviews();" id="login">Reviews</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="juice">Other Products</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div id="cold" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/Gauntlet.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Infinity Gauntlet<span class="tm-list-item-price">$75.25</span></h3>
+                    <p class="tm-list-item-description">The Infinity Gauntlet was a powerful Dwarven-made Uru glove that was designed to channel the power of all six Infinity Stones.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/Dimensions.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Product Dimensions<span class="tm-list-item-price">$2.50</span></h3>
+                    <p class="tm-list-item-description">You need to have HUGE hands. Please check with Thanos for his hand dimensions. Buy Expansion kit.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/Shipping.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                     <h3 class="tm-list-item-name">Shipping Details<span class="tm-list-item-price">$4.99</span></h3>
+                    <p class="tm-list-item-description">We ship products in multi-verse. Shippment price varies based on the delivery country, planet, world, and universe</p>
+                  </div>
+                </div>                  
+              </div>
+            </div>
+
+            <div id="reviews" class="tm-tab-content">
+              <div class="tm-list">
+                    <div class="features_items" id="name"></div>
+              </div>
+            </div>
+
+            <div id="juice" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/Batarang.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Batarang<span class="tm-list-item-price">$42.50</span></h3>
+                    <p class="tm-list-item-description">A batarang is a roughly bat-shaped throwing weapon used by the DC Comics superhero Batman.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/Mjollnir.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Mjollnir<span class="tm-list-item-price">$74.50</span></h3>
+                    <p class="tm-list-item-description">Mjollnir, Old Norse Mjöllnir, in Norse mythology, the hammer of the thunder god, Thor</p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/Shield.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Shield<span class="tm-list-item-price">$36.50</span></h3>
+                    <p class="tm-list-item-description">This shield is composed of a unique combination of Vibranium, steel alloy and a unknown third catalyst, that has never been duplicated, called Proto-Adamantium.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/pizza.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Spiderman Pizza<span class="tm-list-item-price">$18.50</span></h3>
+                    <p class="tm-list-item-description">Joe's Pizza is a pizzeria found in New York City, operated by Mr. Aziz, who briefly employed Peter Parker.</p>              
+                  </div>
+                </div>              
+              </div>
+            </div>
+            <!-- end product Menu Page -->
+          </div>
+        </main>
+      </div>    
+    </div>
+    <footer class="tm-site-footer">
+      <p class="tm-black-bg tm-footer-text">OWASP Demo</p>
+    </footer>
+  </div>
+   
+  <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="video/Pexels-Videos-2757709.mp4" type="video/mp4">
+      </video>
+<!-- 	  pexels-john-mackintosh-9940664.mp4 -->
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>    
+  <script>
+ $("#login").on("click", function reviews() {
+
+    //alert(" inside ");
+
+    $.ajax({
+        url: "https://onlineman477-eval-test.apigee.net/owasp-3/v2/reviews",
+        type: "GET",
+	//	beforeSend: function(request) {
+	//		request.setRequestHeader("abc", "null22");
+	//	  },
+		// beforeSend: function(xhr) {
+		//	xhr.setRequestHeader("Origin", "null22");
+	//	  },
+        success: function(data) {
+               
+            var name = "";
+            for(var i=0;i<=data.length-1;i++){
+            name += `<div class="tm-list-item">
+              <img src="${data[i].image.url}" id="image1" alt="Image" class="tm-list-item-img"/>
+              <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">${data[i].name}</h3>
+                    <p class="tm-list-item-description">${data[i].reviews[0]}</p>
+               </div>
+        </div>`;
+            }
+           
+            $("#name").html("");
+            $("#name").append(name);
+        },
+        error: function(e) {
+            alert("Refresh Page");
+        }
+    });
+
+});
+
+
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+      const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+      const tmVideo = $('#tm-video');
+
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+    }
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`));
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+       
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+     
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault();
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
+
+
+      /************** Video background *********/
+
+      setVideoSize();
+
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
+
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
+
+      btn.on("click", function(e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        }
+      });
+    });
+     
+  </script>
+</body>
+</html>
+OUTPUT;
+echo $output;
